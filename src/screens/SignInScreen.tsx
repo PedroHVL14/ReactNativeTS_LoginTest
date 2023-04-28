@@ -60,7 +60,7 @@ export function SignInScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     backgroundColor: '#2D2D2D',
     flex: 1,
