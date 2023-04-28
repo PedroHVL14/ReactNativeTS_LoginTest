@@ -1,6 +1,4 @@
 # ReactNativeTS_LoginTest
-<h3> React Native simple app to exemplify the Login Logic. </h2>
+<h3> React Native simple app to exemplify the Login Logic. </h2> <br/>
 
-<div align="center">
-<img src="[https://desblogada.files.wordpress.com/2021/05/kaka-cordovil-java-developer-2.gif](https://i.postimg.cc/7YPhtXhM/Imagem-do-Whats-App-de-2023-04-28-s-18-02-21.jpg)" width="700px" />
-</div>
+![Captura de tela 2023-04-28 181438](https://user-images.githubusercontent.com/115195952/235255496-f5a4e51b-56fe-4aee-af18-1ecc5580415f.png)
