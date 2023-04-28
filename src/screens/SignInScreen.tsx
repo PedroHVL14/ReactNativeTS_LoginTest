@@ -3,16 +3,20 @@ import { View, TextInput, StyleSheet, TouchableOpacity, Text, StatusBar, Alert, 
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons'; 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import AppRouter from '../routes/Router';
 
 export function SignInScreen() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const [isLoginAttempted, setIsLoginAttempted] = useState(false);
 
   const navigation = useNavigation();
+  
 
   const handleGoToHome = () => {
-    navigation.navigate('Home');
+    setIsLoginAttempted(true);
+    if (email !== '' && password !== '') {
+      navigation.navigate('Home');
+    }
   };
   const handleGoToSighUp = () => {
     navigation.navigate('SignUp');
@@ -22,10 +26,10 @@ export function SignInScreen() {
     <View style={styles.container}>
       <StatusBar barStyle="default" backgroundColor={'#2D2D2D'}/>
       <View>
-        <Text style={styles.welcomeText}> Welcome </Text>
+        <Text style={styles.welcomeText}> WELCOME </Text>
       </View>
 
-      <View style={styles.inputContainer}>
+      <View style={[styles.inputContainer, { borderWidth: 1.5, borderColor: email === '' && isLoginAttempted ? 'red' : '#656262' }]}>
       <MaterialIcons name="email" size={24} color="#D78F3C" />
       <TextInput
         style={styles.inputContainer}
@@ -35,7 +39,7 @@ export function SignInScreen() {
         placeholderTextColor="#A8A8A8"/>
       </View>
 
-      <View style={styles.inputContainer}>
+      <View style={[styles.inputContainer, { borderWidth: 1.5, borderColor: password === '' && isLoginAttempted ? 'red' : '#656262' }]}>
       <AntDesign name="lock" size={24} color="#D78F3C" />
       <TextInput
         style={styles.inputContainer}
@@ -50,18 +54,54 @@ export function SignInScreen() {
         <Text style={styles.buttonText}>LOGIN</Text>
         </Pressable>
 
-      <View>
-        <Pressable onPress={handleGoToSighUp}>
-          <Text>SignUp</Text>
-        </Pressable>
-      </View>
+        
+        <View style={styles.bottomContainer}>
+          <View style={styles.separator} />
+            <View style={styles.textContainer}>
+                  <Text style={styles.SignUpText}>Don't have an account? </Text>
+                <Pressable onPress={handleGoToSighUp}>
+                  <Text style={styles.SignUpButton}>SignUp</Text>
+                </Pressable>
+             </View>
+        </View>
 
     </View>
   );
 }
 
+export type RootStackParamList = {
+  
+};
 export const styles = StyleSheet.create({
+  bottomContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  SignUpText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+  SignUpButton: {
+    color: '#D78F3C',
+    fontWeight: 'bold',
+    fontSize: 15,
+    marginLeft: 5,
+  },
+  textContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  separator: {
+    borderBottomWidth: 1,
+    width: '50%',
+    color: '#D78F3C',
+    marginTop: 150,
+  },
   container: {
+    headerShown: false,
     backgroundColor: '#2D2D2D',
     flex: 1,
     alignItems: 'center',
@@ -78,7 +118,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   welcomeText: {
-    marginTop: -130,
+    marginTop: 100,
     marginBottom: 190,
     color: '#D78F3C',
     fontWeight: 'bold',
@@ -96,6 +136,7 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: '#FFFFFF',
     fontWeight: 'bold',
+    fontSize: 18,
   },
 });
 

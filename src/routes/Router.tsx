@@ -10,9 +10,9 @@ const Stack = createNativeStackNavigator();
 export default function AppRouter() {
   return (
       <Stack.Navigator initialRouteName="SignIn">
-        <Stack.Screen name="SignIn" component={SignInScreen} />
-        <Stack.Screen name="SignUp" component={SignUpScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="SignIn" component={SignInScreen} options={{headerShown: false, headerTintColor: '#fff', headerStyle: { backgroundColor: '#2D2D2D' } }} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} options={{title: '', headerTintColor: '#fff', headerStyle: { backgroundColor: '#2D2D2D' } }} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
   );
 }
