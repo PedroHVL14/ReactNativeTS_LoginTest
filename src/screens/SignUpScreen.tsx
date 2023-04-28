@@ -6,6 +6,7 @@ import {  } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons'; 
+import Checkbox from 'expo-checkbox';
 
 const SignUpScreen = () => {
   const [email, setEmail] = useState<string>('');
@@ -13,7 +14,8 @@ const SignUpScreen = () => {
   const [username, setUsername] = useState<string>('');
   const navigation = useNavigation();
   const [isLoginAttempted, setIsLoginAttempted] = useState(false);
-  
+  const [isChecked, setIsChecked] = useState(false);
+
   const handleGoToHome = () => {
     setIsLoginAttempted(true);
     if (email !== '' && password !== '' && username !== '') {
@@ -25,6 +27,9 @@ const SignUpScreen = () => {
     navigation.navigate('SignIn');
   };
 
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
 
   return (
     <View style={styles.container}>
@@ -69,8 +74,14 @@ const SignUpScreen = () => {
         <Text style={styles.buttonText}>Sign Up</Text >
       </Pressable>
 
-        <Text style={stylesSU.termsText}>I agree to the Terms and Conditions</Text>
-
+      <View style={stylesSU.termsText}>
+        <Checkbox
+          value={isChecked}
+          onValueChange={handleCheckboxChange}
+        />
+        <Text style={stylesSU.termsTextF}>Agree to the Terms and Conditions</Text>
+      </View>
+      
       <View style={styles.bottomContainer}>
           <View style={styles.separator} />
             <View style={styles.textContainer}>
@@ -101,11 +112,16 @@ const stylesSU = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     
+    
+    
   },
   termsTextF:{
     marginLeft: 5,
+    marginTop: 10,
     textDecorationLine: 'underline',
     color: '#FFFFFF',
+    marginVertical: 10,
+    padding: 5,
   }
 });
 
