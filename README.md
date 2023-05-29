@@ -1,5 +1,5 @@
 # ReactNativeTS_LoginTest
-<h2> This is a simple React Native application that demonstrates the login logic. It provides a basic user interface where users can enter their credentials to log in. The app includes the necessary components, screens, and logic to handle the login process. </h2> <br/>
+<h3> This is a simple React Native application that demonstrates the login logic. It provides a basic user interface where users can enter their credentials to log in. The app includes the necessary components, screens, and logic to handle the login process. </h3> <br/>
 
 ## Installation
 
