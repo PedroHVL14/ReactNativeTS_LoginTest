@@ -1,14 +1,31 @@
 # ReactNativeTS_LoginTest
-<h2> React Native simple app to exemplify the Login Logic. </h2> <br/>
+<h2> This is a simple React Native application that demonstrates the login logic. It provides a basic user interface where users can enter their credentials to log in. The app includes the necessary components, screens, and logic to handle the login process. </h2> <br/>
 
+## Installation
+
+Install the dependencies:
+
+
+```bash
+  npm install
+```
+
+Finally, start the app:
+
+```bash
+  npm start
+```
+
+<h2 align="center"> Login </h2>
 <p align="center">
-  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/2fb9bc5a-9bfe-49ac-8e85-ad9a0eca4459" width="300" /> 
-  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/a74aee50-4a0f-4ff3-9b0a-2eb0d4fddf36" width="303" />
+  <img src="https://github.com/PedroHVL14/ReactNative_EcommerceApp/assets/115195952/cb7a34ac-ed1f-403e-890f-5a1523714a0e" width="230" hspace="15">
+  <img src="https://github.com/PedroHVL14/ReactNative_EcommerceApp/assets/115195952/bae6ea91-76e8-4c6d-8b59-b0133bef54e1" width="229" hspace="15">
 </p>
 
+<h2 align="center"> Handle Errors </h2>
 <p align="center">
-  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/4cb89794-b0fc-4457-b60a-8f6410c5bccf" width="300" />
-  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/c53d54cd-9992-44fc-9b72-20b78506b267" width="303" />
+  <img src="https://github.com/PedroHVL14/ReactNative_EcommerceApp/assets/115195952/a84f001a-0f33-4f79-8581-8287730106a8" width="230" hspace="15">
+  <img src="https://github.com/PedroHVL14/ReactNative_EcommerceApp/assets/115195952/762e16ae-bf74-4ce3-a701-f551ec1852da" width="230" hspace="15">
 </p>
 
 
