@@ -2,11 +2,13 @@
 <h2> React Native simple app to exemplify the Login Logic. </h2> <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/115195952/235775719-8424198c-cf04-4cfe-8d06-08237512b891.jpg" width="300" />
-  <img src="https://user-images.githubusercontent.com/115195952/235775667-160b55e9-cdef-4d7b-a2ec-4541244cf4d9.jpg" width="300" />
+  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/2fb9bc5a-9bfe-49ac-8e85-ad9a0eca4459" width="300" /> 
+  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/a74aee50-4a0f-4ff3-9b0a-2eb0d4fddf36" width="303" />
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/115195952/235775564-6891785d-b884-41af-9085-59052f8a5cff.jpg" width="300" /> 
-  <img src="https://user-images.githubusercontent.com/115195952/235775449-1243cdb1-33f6-4820-984b-c096dacf2490.jpg" width="300" />
+  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/4cb89794-b0fc-4457-b60a-8f6410c5bccf" width="300" />
+  <img src="https://github.com/PedroHVL14/ReactNativeTS_LoginTest/assets/115195952/c53d54cd-9992-44fc-9b72-20b78506b267" width="303" />
 </p>
+
+
